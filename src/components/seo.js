@@ -77,7 +77,12 @@ function SEO({ description, lang, meta, keywords, title }) {
             : []
         )
         .concat(meta)}
-    />
+    >
+      <link
+        href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:500,600,700|Merriweather:400,700"
+        rel="stylesheet"
+      />
+    </Helmet>
   )
 }
 

@@ -1,0 +1,154 @@
+{
+  "title": "I'm a Javascript developer from germany.",
+  "aboutme": {
+    "title": "About me",
+    "twitter": "joschuadots",
+    "image": "./js_profile.jpg",
+    "hashtags": [
+      {
+        "key": 1,
+        "text": "#developer"
+      },
+      {
+        "key": 2,
+        "text": "#student"
+      },
+      {
+        "key": 3,
+        "text": "#javascript"
+      },
+      {
+        "key": 4,
+        "text": "#curiosity"
+      },
+      {
+        "key": 5,
+        "text": "#opensource"
+      }
+    ],
+    "content": "./markdown/about-me.md"
+  },
+  "mystack": {
+    "title": "My Stack / Skills",
+    "content": "./markdown/my-stack.md",
+    "categories": [
+      {
+        "title": "Frontend",
+        "brands": [
+          {
+            "name": "javascript",
+            "image": "./brands/javascript.png"
+          },
+          {
+            "name": "react",
+            "image": "./brands/react.png"
+          },
+          {
+            "name": "html",
+            "image": "./brands/html.png"
+          },
+          {
+            "name": "sass/css",
+            "image": "./brands/sass.png"
+          },
+          {
+            "name": "bootstrap 4",
+            "image": "./brands/bootstrap.png"
+          },
+          {
+            "name": "fontawesome",
+            "image": "./brands/fontawesome.png"
+          },
+          {
+            "name": "gatsby",
+            "image": "./brands/gatsby.png"
+          }
+        ]
+      },
+      {
+        "title": "Backend",
+        "brands": [
+          {
+            "name": "node",
+            "image": "./brands/nodejs.png"
+          },
+          {
+            "name": "express",
+            "image": "./brands/express-ex.png"
+          },
+          {
+            "name": "websockets",
+            "image": "./brands/ws.png"
+          },
+          {
+            "name": "meteor",
+            "image": "./brands/meteors.png"
+          }
+        ]
+      },
+      {
+        "title": "Database",
+        "brands": [
+          {
+            "name": "mongodb",
+            "image": "./brands/mongodb-leaf.png"
+          },
+          {
+            "name": "firebase",
+            "image": "./brands/firebase.png"
+          }
+        ]
+      },
+      {
+        "title": "Cloud and Infrastructure",
+        "brands": [
+          {
+            "name": "digitalocean",
+            "image": "./brands/digitalocean.png"
+          },
+          {
+            "name": "gcloud",
+            "image": "./brands/gcp.png"
+          },
+          {
+            "name": "docker",
+            "image": "./brands/docker.png"
+          },
+          {
+            "name": "nginx",
+            "image": "./brands/nginx.png"
+          },
+          {
+            "name": "caddy",
+            "image": "./brands/caddyserver.png"
+          },
+          {
+            "name": "linux/ubuntu",
+            "image": "./brands/ubuntu.png"
+          }
+        ]
+      },
+      {
+        "title": "Tools",
+        "brands": [
+          {
+            "name": "vscode",
+            "image": "./brands/vscode.png"
+          },
+          {
+            "name": "git",
+            "image": "./brands/git.png"
+          },
+          {
+            "name": "npm",
+            "image": "./brands/npm.png"
+          },
+          {
+            "name": "yarn",
+            "image": "./brands/yarn.png"
+          }
+        ]
+      }
+    ]
+  }
+}
