@@ -29,7 +29,7 @@ function IndexHeader({ siteTitle, location }) {
   })
 
   const typoProps = useSpring({
-    letterSpacing: hover ? "0.4rem" : "0.2rem",
+    letterSpacing: hover ? "0.3rem" : "0.2rem",
     from: { letterSpacing: "1rem" },
     delay: 100,
     config: config.gentle,
@@ -68,7 +68,6 @@ function IndexHeader({ siteTitle, location }) {
             </div>
           </animated.div>
         </Link>
-
         <nav>
           <ul>
             {transitions

@@ -11,7 +11,7 @@ export default function IOWrapper({ className = "", children }) {
     from: {
       opacity: 0,
     },
-    delay: 200
+    delay: 150
   })
 
   return (

@@ -1,19 +1,10 @@
 .index-layout {
   font-family: 'Merriweather', serif;
 
-  .hero {
-    top: 0;
-    z-index: -1;
-    position: absolute;
-    height: 600px;
-    width: 100%;
-    //background: linear-gradient(to top,transparent, rgb(201, 62, 62));
-  }
-
   .main {
     z-index: 10;
-
     padding: 20px;
+    padding-top: 0px;
 
     .twitter {
       font-family: 'IBM Plex Mono', monospace;
@@ -24,6 +15,14 @@
 
     .left-col {
       width: 170px;
+      text-align: right;
+
+    }
+
+    @media (max-width: 992px) {
+        .left-col {
+          text-align: left;
+        }
     }
 
     .content {
@@ -40,6 +39,7 @@
       border-left: 1px solid #ebebeb;
       display: flex;
       padding: 5px 20px;
+      padding-bottom: 10px;
       flex-wrap: wrap;
 
       .brand {
@@ -58,12 +58,13 @@
         }
       }
     }
-
-    .profile-image {
-      border-radius: 5px;
-      margin: 20px 0px;
-      margin-bottom: 10px;
-      box-shadow: 0 1px 6px rgba(0,0,0,.2);
+    .profile-info {
+      margin-top: 20px;
+      .profile-image {
+        border-radius: 5px;
+        margin-bottom: 10px;
+        box-shadow: 0 1px 6px rgba(0,0,0,.2);
+      }
     }
     margin-bottom: 50px;
   }

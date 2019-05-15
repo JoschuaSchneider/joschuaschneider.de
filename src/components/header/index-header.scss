@@ -25,6 +25,14 @@
             color: rgb(201, 62, 62);
             font-weight: 700;
         }
+
+        p {
+            padding-top: 15px;
+            font-size: .9rem;
+            line-height: 1.2rem;
+            color: lighten(black, 60%);
+            font-weight: 500;
+        }
     }
 
     nav {

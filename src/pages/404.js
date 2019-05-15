@@ -1,8 +1,7 @@
 import React from "react"
 
-import { graphql } from "gatsby"
+import { Link } from 'gatsby'
 
-import Img from 'gatsby-image'
 import SEO from "../components/seo"
 
 function NotFoundPage({ data }) {
@@ -11,9 +10,10 @@ function NotFoundPage({ data }) {
       <SEO title="404 Not found" />
       <div className="container not-found">
         <h3>404 | ARCHIVES INCOMPLETE</h3>
+        <p>Try going <Link to="/">back to the home page.</Link></p>
         <div className="row">
           <div className="col-12">
-            <img src="/archives_incomplete.gif" alt=""/>
+            <img src="/archives_incomplete.gif" width="100%" alt=""/>
           </div>
         </div>
       </div>

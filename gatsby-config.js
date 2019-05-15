@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Joschua Schneider`,
-    description: `JavaScript developer from Germany.`,
+    title: `Joschua Schneider - building software driven by passion`,
+    description: `I'm a Javascript developer and active member of the OpenSource community based in Hanover, Germany. I build software driven by passion.`,
     author: `@joschuadots`,
   },
   plugins: [
@@ -35,6 +35,30 @@ module.exports = {
       resolve: `gatsby-plugin-layout`,
       options: {
         component: require.resolve("./src/components/layout/index-layout.js"),
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-140227263-1",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Avoids sending pageview hits from custom paths
+        exclude: ["/preview/**"],
+        // Enables Google Optimize using your container Id
+        //optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
+        // Enables Google Optimize Experiment ID
+        //experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
+        // Set Variation ID. 0 for original 1,2,3....
+        //variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
+        // Any additional create only fields (optional)
+        //sampleRate: 5,
+        //siteSpeedSampleRate: 10,
+        //cookieDomain: "joschuaschneider.de",
       },
     },
     {

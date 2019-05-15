@@ -1,9 +1,8 @@
 import React, { useRef } from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
-import { useSpring, animated, config } from "react-spring"
+import { useSpring, animated } from "react-spring"
 
-import Layout from "../components/layout/index-layout"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
 
@@ -11,9 +10,7 @@ import IOWrapper from "../components/animation/IOWrapper"
 import FluidList from "../components/animation/FluidList"
 
 function IndexPage({ data }) {
-  const { title, aboutme, mystack } = data.indexJson
-
-  console.log(mystack)
+  const { aboutme, mystack } = data.indexJson
 
   const imagePropsRef = useRef()
   const imageProps = useSpring({
@@ -39,38 +36,42 @@ function IndexPage({ data }) {
       />
       <div className="container">
         <IOWrapper className="row">
-          <div className="col-auto left-col p-4 text-right">
+          <div className="col-12 col-lg-auto left-col p-4">
             <h4>{aboutme.title}</h4>
-            <animated.div style={imageProps}>
-              <Img
-                className="profile-image"
-                fluid={aboutme.image.childImageSharp.fluid}
-              />
-            </animated.div>
-            <a href={`https://twitter.com/${aboutme.twitter}`} className="twitter">
-              @{aboutme.twitter}
-            </a>
-            <FluidList waitOnRef={imagePropsRef} className="d-flex flex-column mt-2">
-              {aboutme.hashtags.map(tag => (
-                <div className="small text-muted" key={tag.key}>
-                  {tag.text}
-                </div>
-              ))}
-            </FluidList>
+            <div className="row profile-info">
+              <animated.div className="col-8 col-lg-12" style={imageProps}>
+                <Img
+                  className="profile-image"
+                  fluid={aboutme.image.childImageSharp.fluid}
+                />
+              </animated.div>
+              <div className="col-4 col-lg-12">
+                <a href={`https://twitter.com/${aboutme.twitter}`} className="twitter">
+                  @{aboutme.twitter}
+                </a>
+                <FluidList waitOnRef={imagePropsRef} className="d-flex flex-column mt-2">
+                  {aboutme.hashtags.map(tag => (
+                    <div className="small text-muted" key={tag.key}>
+                      {tag.text}
+                    </div>
+                  ))}
+                </FluidList>
+              </div>
+            </div>
           </div>
           <div
-            className="col p-4 pb-5 content"
+            className="col-12 col-lg p-4 pb-5 content"
             dangerouslySetInnerHTML={{
               __html: aboutme.content.childMarkdownRemark.html,
             }}
           />
         </IOWrapper>
         <IOWrapper className="row mt-4 mb-4">
-          <div className="col-auto left-col p-4 text-right">
+          <div className="col-12 col-lg-auto left-col p-4">
             <h4>{mystack.title}</h4>
           </div>
           <div
-            className="col p-4 content"
+            className="col-12 col-lg p-4 content"
             dangerouslySetInnerHTML={{
               __html: mystack.content.childMarkdownRemark.html,
             }}
@@ -78,10 +79,10 @@ function IndexPage({ data }) {
         </IOWrapper>
         {mystack.categories.map(category => (
           <IOWrapper className="row mb-5">
-            <div className="col-auto left-col p-4 text-right text-muted">
+            <div className="col-12 col-lg-auto left-col p-4 text-muted">
               <h6>{category.title}</h6>
             </div>
-            <div className="col content brand-list">
+            <div className="col-12 col-lg content brand-list">
               {category.brands.map(brand => (
                 <div className="brand">
                   <Img fixed={brand.image.childImageSharp.fixed} />
