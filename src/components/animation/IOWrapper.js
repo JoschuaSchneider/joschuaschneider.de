@@ -3,7 +3,7 @@ import React from "react"
 import { useSpring, animated } from "react-spring"
 import { useInView } from "react-intersection-observer"
 
-export default function IOWrapper({ className = "", children }) {
+export default function IOWrapper({ className = "", children, ...otherProps }) {
   const [ref, inView] = useInView()
 
   const props = useSpring({
@@ -15,7 +15,7 @@ export default function IOWrapper({ className = "", children }) {
   })
 
   return (
-    <animated.div ref={ref} className={`io-wrapper ${className}`} style={props}>
+    <animated.div ref={ref} className={`io-wrapper ${className}`} {...otherProps} style={props}>
       {children}
     </animated.div>
   )

@@ -35,6 +35,40 @@
       }
     }
 
+    .project-row {
+      .content {
+        box-shadow: 0 0 25px rgba(0,0,0,.1);
+        background: darken(white, 2%);
+        border-radius: 10px;
+        padding: 0;
+        overflow: hidden;
+
+        .project-title {
+          h4 {
+            padding: 15px 20px;
+            padding-bottom: 5px;
+          }
+
+          .cs-info {
+            cursor: help;
+          }
+        }
+        .types {
+          padding: 10px 20px;
+          display: flex;
+          padding-top: 0;
+          div {
+            margin-right: 10px;
+          }
+        }
+
+        .md-content {
+          background: darken(white, 0%);
+          padding: 10px 15px;
+        }
+      }
+    }
+
     .brand-list {
       border-left: 1px solid #ebebeb;
       display: flex;

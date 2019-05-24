@@ -38,7 +38,7 @@ function IndexLayout({ location, children }) {
       <Header siteTitle={data.site.siteMetadata.title} location={location} />
       <div className="index-layout">
         {transitions.map(({ item, key, props }) => (
-          <animated.main className="main" style={props}>
+          <animated.main className="main" key={key} style={props}>
             {item}
           </animated.main>
         ))}

@@ -14,6 +14,7 @@ import "./index-header.scss"
 
 const menuItems = [
   { key: "home", text: "HOME", path: "" },
+  { key: "projects", text: "PROJECTS", path: "/projects" },
   { key: "contact", text: "CONTACT", path: "/contact" },
 ].reverse()
 

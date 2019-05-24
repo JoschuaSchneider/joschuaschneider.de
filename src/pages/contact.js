@@ -11,7 +11,7 @@ function ContactPage({ data }) {
   return (
     <div>
       <SEO
-        title="Imprint"
+        title="Contact"
         keywords={[
           `joschuaschneider`,
           `developer`,
@@ -19,6 +19,7 @@ function ContactPage({ data }) {
           `javascript`,
           `portfolio`,
           `homepage`,
+          `contact`
         ]}
       />
       <div className="container">

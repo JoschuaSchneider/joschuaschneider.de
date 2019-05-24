@@ -1,0 +1,24 @@
+{
+    "title": "Projects",
+    "content": "./markdown/projects.md",
+    "projects": [
+        {
+            "title": "use-error-boundary",
+            "href": "https://github.com/JoschuaSchneider/use-error-boundary",
+            "types": ["open-source", "npm", "react", "react-hooks"],
+            "content": "./markdown/projects/use-error-boundary.md"
+        },
+        {
+            "title": "wildkraeuterwerk",
+            "href": null,
+            "types": ["closed-source", "fullstack", "node", "react", "mongodb", "shop"],
+            "content": "./markdown/projects/wildkraeuterwerk.md"
+        },
+        {
+            "title": "miku v4",
+            "href": null,
+            "types": ["closed-source", "fullstack", "node", "react", "mongodb", "realtime", "bot"],
+            "content": "./markdown/projects/miku.md"
+        }
+    ]
+}
