@@ -3,13 +3,21 @@
   color: lighten(black, 20%);
   background: white;
 
+  a {
+    color: #c93e3e;
+
+    &:hover {
+      color: darken(#c93e3e, 10%);
+    }
+  }
+
   .main {
     z-index: 10;
     padding-top: 0px;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
 
     strong {
-      font-weight: 600;
+      font-weight: 500;
     }
 
     .twitter {
@@ -22,6 +30,7 @@
     .left-col {
       width: 170px;
       text-align: right;
+      margin-right: 10px;
     }
 
     @media (max-width: 992px) {
@@ -31,9 +40,8 @@
     }
 
     .content {
-      color: lighten(black, 30%);
-      margin-left: 10px;
-      margin-right: 10px;
+      color: lighten(black, 35%);
+      
       
       &.hovered {
         //border-radius: 10px;

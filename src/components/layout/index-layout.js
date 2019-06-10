@@ -43,8 +43,13 @@ function IndexLayout({ location, children }) {
           </animated.main>
         ))}
         <footer className="container text-muted small">
-          Copyright © {new Date().getFullYear()} Joschua Schneider |{" "}
-          <Link to="/contact">Imprint</Link>
+          <p>Copyright © {new Date().getFullYear()} Joschua Schneider</p>
+          <p>
+            Source available at my{" "}
+            <a href="https://github.com/JoschuaSchneider/joschuaschneider.de">
+              GitHub
+            </a>
+          </p>
         </footer>
       </div>
     </>
