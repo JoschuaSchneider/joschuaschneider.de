@@ -1,8 +1,6 @@
-Here is a **small excerpt** of the projects I am/have been working on.
+A **small excerpt** of the projects I am/have been working on.
 
-I will update this list, whenever a closed source project becomes public, or I get the
-**permission to use it in this list**.
+_I'm currently updating old Projects and making them publicly available. Many projects are closed-source, I'm working
+on getting the permissions to list them with some screenshots and specs._
 ---
-If you are interested in **code samples** or more information on closed-source projects, please [contact](/contact) me.
-
-Feel free to contribute to my **open-source** projects over at github!
+Feel free to [contact](/contact) me for more information/code samples on closed-source projects.
