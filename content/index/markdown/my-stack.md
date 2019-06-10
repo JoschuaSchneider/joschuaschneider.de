@@ -1,21 +1,21 @@
-All the technologies I am using on a **regular basis**, backed by solid in-depth knowledge.
+Technologies I'm using on a **regular basis**, backed by solid in-depth knowledge.
 
-I'm always excited about the newest features and dive into them as soon as they come up,
-so I am familiar with all features all the way up to **ECMAScript 9 (2018)**.
-
-My react skills include concepts and libraries such as [redux](https://www.npmjs.com/package/redux), [mobx](https://www.npmjs.com/package/mobx),
-[react context](https://reactjs.org/docs/context.html), [react-spring](https://www.npmjs.com/package/react-spring),
-[styled-components](https://www.npmjs.com/package/styled-components), [react hooks](https://reactjs.org/docs/hooks-intro.html) (I love them),
-[react-router](https://www.npmjs.com/package/react-router) (including [DOM bindings](https://www.npmjs.com/package/react-router-dom))
-and many more.
+_All the newest language features? OH Y-**ES7**!_
 
 ---
 
-You just need a part of the stack? No problem!  
-**APIs**, **frontends** to existing APIs or **static pages**, I got you covered!
+The majority of projects I am or have been working on are based on **React**.  
+My **React skills** include concepts and libraries such as [redux](https://www.npmjs.com/package/redux), [mobx](https://www.npmjs.com/package/mobx),
+[react context](https://reactjs.org/docs/context.html), [react-spring](https://www.npmjs.com/package/react-spring),
+[styled-components](https://www.npmjs.com/package/styled-components), [react hooks](https://reactjs.org/docs/hooks-intro.html),
+[react-router](https://www.npmjs.com/package/react-router)
+and many more.
 
-I'm familiar with a variety of common best practices and standards, to ensure consistency and maintainablility of
-the projects that I work on.
+When building Full-Stack Projects, my stack mostly consists of **node, express and mongodb**.  
+Often in combination with **Next**, **Meteor** or **Gatsby**.
 
-My ability to handle, understand and break down complex structures helps me build **secure, performant and scalable software** -
-or dive fast into existing projects
+**I always build my projects with security, performance and scalability in mind.**
+
+---
+
+Take a look at the languages, tools and frameworks I work with below.
