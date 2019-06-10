@@ -1,17 +1,20 @@
-Hey, my name is **Joschua** and I'm a 21 year old developer and IT-Student from Hanover, Germany.
+#### Building software driven by passion
 
-I **design**, **build** and **maintain** Web Applications powered by **Javascript**.
+---
 
-My passion for programming is a result of over eight years of experience, including 4 years of professional expertise.
-Since co-founding a startup in 2016 and by managing and developing large projects,
-I have shifted my work to a professional level.
+I'm a **passionate** JavaScript/Web Developer and student based in Germany.
 
-Even though I am studying IT, most of my knowledge and skill is **self-taught**.
-When it comes to new languages, concepts, frameworks or tools I am able to build
-a **deep understanding extremely fast**.  
-I build my **confidence in problem solving** by diving into the inner works of a language or library.  
-Where other people claim to know everything, **I continue to challenge myself** with new aspects of
-even the most basic features of a language or library.
+My **confidence** is based on four years of **professional expertise** and over eight years of programming in total.
 
-As a result of my philosophy I love to **share knowledge** and **help others** to solve problems and build understanding.  
-Thats why I am an active member of the **OpenSource community** on [GitHub](https://github.com/JoschuaSchneider).
+Although I gained most of my skills and experience myself,
+I currently **study IT** in Hanover to **expand my scientific knowledge**.
+
+I co-founded a startup in 2016, worked with customers and companies to plan, develop and deploy Full-Stack Web Applications.
+
+My intuition, calmness and strive for in-depth knowledge constitutes my ability to solve even the most complex Problems fast
+and effective.
+
+---
+
+**Being positive, sharing my knowledge and helping others are core values of mine.**  
+Thats why I am an active member of the **OpenSource community** (for example on [GitHub](https://github.com/JoschuaSchneider))
