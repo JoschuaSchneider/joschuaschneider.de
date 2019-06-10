@@ -24,11 +24,11 @@ function ContactPage({ data }) {
       />
       <div className="container">
         <IOWrapper className="row">
-          <div className="col-6 col-lg-auto left-col p-4">
+          <div className="col-12 col-lg-auto left-col p-4">
             <h4>{title}</h4>
           </div>
           <div
-            className="col-12 col-lg p-4 content"
+            className="col-12 col-lg p-4 content hovered"
             dangerouslySetInnerHTML={{
               __html: content.childMarkdownRemark.html,
             }}

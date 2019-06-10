@@ -23,12 +23,12 @@ function ProjectsPage({ data }) {
         ]}
       />
       <div className="container">
-        <IOWrapper className="row">
+        <IOWrapper className="row mb-5">
           <div className="col-12 col-lg-auto left-col p-4">
             <h4>{title}</h4>
           </div>
           <div
-            className="col-12 col-lg p-4 pb-5 content"
+            className="col-12 col-lg p-4 content hovered"
             dangerouslySetInnerHTML={{
               __html: content.childMarkdownRemark.html,
             }}

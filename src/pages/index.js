@@ -78,7 +78,7 @@ function IndexPage({ data }) {
           />
         </IOWrapper>
         {mystack.categories.map(category => (
-          <IOWrapper className="row mb-5" key={category.title}>
+          <IOWrapper className="row mb-5 mt-5" key={category.title}>
             <div className="col-12 col-lg-auto left-col p-4 text-muted">
               <h6>{category.title}</h6>
             </div>
