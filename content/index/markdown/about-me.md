@@ -14,4 +14,4 @@ Where other people claim to know everything, **I continue to challenge myself** 
 even the most basic features of a language or library.
 
 As a result of my philosophy I love to **share knowledge** and **help others** to solve problems and build understanding.  
-Thats why I am an active member of the **OpenSource community** on [github](https://github.com/JoschuaSchneider).
+Thats why I am an active member of the **OpenSource community** on [GitHub](https://github.com/JoschuaSchneider).

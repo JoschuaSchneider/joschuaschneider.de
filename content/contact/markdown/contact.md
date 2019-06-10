@@ -2,8 +2,8 @@
 
 `Region Hanover, Germany`
 
-[Tweet me @joschuadots](https://twitter.com/joschuadots)  
-[Follow me on github](https://github.com/JoschuaSchneider)
+Tweet me [@joschuadots](https://twitter.com/joschuadots)  
+Follow new on [GitHub](https://github.com/JoschuaSchneider)
 
 ---
 

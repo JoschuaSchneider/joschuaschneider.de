@@ -79,7 +79,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         .concat(meta)}
     >
       <link
-        href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:500,600,700|Merriweather:400,700"
+        href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:500,700|Roboto:400,500&display=swap"
         rel="stylesheet"
       />
     </Helmet>

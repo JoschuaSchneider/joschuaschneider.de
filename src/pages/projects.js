@@ -36,16 +36,16 @@ function ProjectsPage({ data }) {
         </IOWrapper>
         <FluidList>
           {projects.map(project => (
-            <IOWrapper key={project.title} className="row project-row mb-4">
+            <IOWrapper key={project.title} className="row project-row mb-5">
               <div className="col-12 col-lg-auto left-col" />
               <div className="col-12 col-lg content">
                 {project.href && (
-                  <a href={project.href} className="project-title">
+                  <a href={project.href} className="project-title link">
                     <h4>{project.title}</h4>
                   </a>
                 )}
                 {!project.href && (
-                  <div className="closed-source project-title d-flex align-items-center">
+                  <div className="closed-source project-title blank d-flex align-items-center">
                     <h4>{project.title}</h4>
                     <span
                       className="text-muted small cs-info"
@@ -55,7 +55,7 @@ function ProjectsPage({ data }) {
                     </span>
                   </div>
                 )}
-                <div className="types small text-muted">
+                <div className="types small">
                   {project.types.map(type => (
                     <div key={type}>{type}</div>
                   ))}

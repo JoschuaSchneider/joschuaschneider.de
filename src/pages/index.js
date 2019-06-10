@@ -60,7 +60,7 @@ function IndexPage({ data }) {
             </div>
           </div>
           <div
-            className="col-12 col-lg p-4 pb-5 content"
+            className="col-12 col-lg p-4 content hovered"
             dangerouslySetInnerHTML={{
               __html: aboutme.content.childMarkdownRemark.html,
             }}
@@ -71,7 +71,7 @@ function IndexPage({ data }) {
             <h4>{mystack.title}</h4>
           </div>
           <div
-            className="col-12 col-lg p-4 content"
+            className="col-12 col-lg p-4 content hovered"
             dangerouslySetInnerHTML={{
               __html: mystack.content.childMarkdownRemark.html,
             }}

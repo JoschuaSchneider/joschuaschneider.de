@@ -1,10 +1,16 @@
 .index-layout {
-  font-family: 'Merriweather', serif;
+  font-family: 'Roboto', sans-serif;
+  color: lighten(black, 20%);
+  background: white;
 
   .main {
     z-index: 10;
-    padding: 20px;
     padding-top: 0px;
+    font-size: 1.1rem;
+
+    strong {
+      font-weight: 600;
+    }
 
     .twitter {
       font-family: 'IBM Plex Mono', monospace;
@@ -16,7 +22,6 @@
     .left-col {
       width: 170px;
       text-align: right;
-
     }
 
     @media (max-width: 992px) {
@@ -26,7 +31,15 @@
     }
 
     .content {
-      color: lighten(black, 20%);
+      color: lighten(black, 30%);
+      margin-left: 10px;
+      margin-right: 10px;
+      
+      &.hovered {
+        //border-radius: 10px;
+        background: white;
+        box-shadow: 0 0 45px rgba(0,0,0,.05);
+      }
 
       pre {
         padding: 5px 10px;
@@ -37,9 +50,8 @@
 
     .project-row {
       .content {
-        box-shadow: 0 0 25px rgba(0,0,0,.1);
+        box-shadow: 0 0 65px rgba(0,0,0,.2);
         background: darken(white, 2%);
-        border-radius: 10px;
         padding: 0;
         overflow: hidden;
 
@@ -97,7 +109,7 @@
       .profile-image {
         border-radius: 5px;
         margin-bottom: 10px;
-        box-shadow: 0 1px 6px rgba(0,0,0,.2);
+        //box-shadow: 0 0px 10px rgba(0,0,0,.2);
       }
     }
     margin-bottom: 50px;
