@@ -1,7 +1,20 @@
 .index-layout {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: lighten(black, 20%);
   background: white;
+
+  blockquote {
+    border-left: 3px solid rgba(201, 62, 62, 0.267);
+    padding-left: 10px;
+
+    color: lighten(black, 40%);
+  }
+
+  .emoji-icon {
+    display: inline;
+    position: relative;
+    top: -2px;
+  }
 
   a {
     color: #c93e3e;
@@ -21,8 +34,8 @@
     }
 
     .twitter {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: .9rem;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.9rem;
       text-decoration: none;
       margin-bottom: 10px;
     }
@@ -34,19 +47,38 @@
     }
 
     @media (max-width: 992px) {
-        .left-col {
-          text-align: left;
-        }
+      .left-col {
+        text-align: left;
+      }
     }
 
     .content {
       color: lighten(black, 35%);
-      
-      
+
       &.hovered {
+        z-index: 1;
         //border-radius: 10px;
         background: white;
-        box-shadow: 0 0 45px rgba(0,0,0,.05);
+        box-shadow: 0 0 45px rgba(0, 0, 0, 0.05);
+      }
+
+      &.paypal {
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+
+        a {
+          padding: 10px 30px;
+          border-radius: 5px;
+          color: white;
+          text-align: center;
+          background: #0079c1;
+
+          &:hover {
+            color: white;
+            background: darken(#0079c1, 10%);
+          }
+        }
       }
 
       pre {
@@ -58,7 +90,7 @@
 
     .project-row {
       .content {
-        box-shadow: 0 0 65px rgba(0,0,0,.2);
+        box-shadow: 0 0 65px rgba(0, 0, 0, 0.2);
         background: darken(white, 2%);
         padding: 0;
         overflow: hidden;
@@ -124,17 +156,17 @@
   }
 
   .not-found {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     img {
       margin: 20px 0px;
       border-radius: 10px;
-      box-shadow: 0 0 7px rgba(0,0,0,.5);
+      box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
     }
   }
 
   footer {
     text-align: center;
     padding: 20px;
-    opacity: .5;
+    opacity: 0.5;
   }
 }
