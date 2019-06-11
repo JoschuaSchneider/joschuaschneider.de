@@ -24,7 +24,10 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [`gatsby-remark-prismjs`],
+        plugins: [
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-emoji`
+        ],
       },
     },
     `gatsby-transformer-sharp`,
@@ -44,7 +47,7 @@ module.exports = {
         head: true,
         anonymize: true,
         respectDNT: true,
-        exclude: ["/preview/**"]
+        exclude: ["/preview/**"],
       },
     },
     {
