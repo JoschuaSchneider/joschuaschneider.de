@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Joschua Schneider - building software driven by passion`,
-    description: `I'm a Javascript developer and active member of the OpenSource community based in Hanover, Germany. I build software driven by passion.`,
+    description: `I'm a passionate JavaScript/Web Developer and member of the OpenSource community from Hanover, Germany. I build software driven by passion.`,
     author: `@joschuadots`,
     siteUrl: `https://www.joschuaschneider.de`,
   },
