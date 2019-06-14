@@ -6,13 +6,18 @@ module.exports = {
     siteUrl: `https://www.joschuaschneider.de`,
   },
   plugins: [
+    // React helmet SSR
     `gatsby-plugin-react-helmet`,
+    // SEO: Sitemap generation
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         exclude: ["/donate"],
       },
     },
+    // SEO: robots.txt generation
+    `gatsby-plugin-robots-txt`,
+    // Sources: images in src/images
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -20,6 +25,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    // Sources: JSON and Markdown files in /content
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -27,23 +33,30 @@ module.exports = {
         path: `${__dirname}/content`,
       },
     },
+    // Transform JSON
     `gatsby-transformer-json`,
+    // Transform Markdown with prismjs and emojis
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [`gatsby-remark-prismjs`, `gatsby-remark-emoji`],
       },
     },
+    // Transform images with sharp
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    // Use sass
     `gatsby-plugin-sass`,
+    // Transform relative links in markdown
     `gatsby-plugin-catch-links`,
+    // Use legacy central-layout system for route animations
     {
       resolve: `gatsby-plugin-layout`,
       options: {
         component: require.resolve("./src/components/layout/index-layout.js"),
       },
     },
+    // Use Google Analytics
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
