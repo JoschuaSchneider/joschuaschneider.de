@@ -3,9 +3,16 @@ module.exports = {
     title: `Joschua Schneider - building software driven by passion`,
     description: `I'm a Javascript developer and active member of the OpenSource community based in Hanover, Germany. I build software driven by passion.`,
     author: `@joschuadots`,
+    siteUrl: `https://www.joschuaschneider.de`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: ["/donate"],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -24,10 +31,7 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
-          `gatsby-remark-prismjs`,
-          `gatsby-remark-emoji`
-        ],
+        plugins: [`gatsby-remark-prismjs`, `gatsby-remark-emoji`],
       },
     },
     `gatsby-transformer-sharp`,
