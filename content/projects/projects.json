@@ -3,6 +3,12 @@
   "content": "./markdown/projects.md",
   "projects": [
     {
+      "title": "goschs-gasthof.de",
+      "href": "https://goschs-gasthof.de",
+      "types": ["closed-source", "react", "gatsby"],
+      "content": "./markdown/projects/goschs-gasthof-de.md"
+    },
+    {
       "title": "joschuaschneider.de",
       "href": "https://github.com/JoschuaSchneider/joschuaschneider.de",
       "types": ["open-source", "react", "gatsby"],
@@ -32,20 +38,6 @@
         "shop"
       ],
       "content": "./markdown/projects/wildkraeuterwerk.md"
-    },
-    {
-      "title": "miku v4",
-      "href": null,
-      "types": [
-        "closed-source",
-        "fullstack",
-        "node",
-        "react",
-        "mongodb",
-        "realtime",
-        "bot"
-      ],
-      "content": "./markdown/projects/miku.md"
     }
   ]
 }
