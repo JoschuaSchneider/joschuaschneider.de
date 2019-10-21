@@ -9,7 +9,3 @@ If the project you're donating for has a supporters list and you want to be ment
 and your desired display name!
 
 **Thank you for supporting what I do!**
-
----
-Special thanks to my friend, owner of [Nakama Streaming Community](https://nakama.tv) for
-years of support, interesting projects and letting me influence his personal skills :thumbsup:
