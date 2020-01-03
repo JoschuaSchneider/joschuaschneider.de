@@ -29,12 +29,6 @@ function IndexHeader({ siteTitle, location }) {
     ref: springRef,
   })
 
-  const typoProps = useSpring({
-    letterSpacing: hover ? "0.3rem" : "0.2rem",
-    from: { letterSpacing: "1rem" },
-    delay: 100,
-    config: config.gentle,
-  })
   const transitionRef = useRef()
   const transitions = useTransition(menuItems, item => item.key, {
     from: {
@@ -55,9 +49,8 @@ function IndexHeader({ siteTitle, location }) {
     <animated.header className="index-header" style={headerProps}>
       <div className="container">
         <Link to="/" style={{ textDecoration: "none" }}>
-          <animated.div
+          <div
             className="typo-title"
-            style={typoProps}
             onMouseEnter={e => setHover(true)}
             onMouseLeave={e => setHover(false)}
           >
@@ -67,17 +60,17 @@ function IndexHeader({ siteTitle, location }) {
             <div>
               <span className="emph">S</span>chneider
             </div>
-          </animated.div>
+          </div>
         </Link>
         <nav>
           <ul>
             {transitions
               .map(({ item, key, props }) => (
-                <animated.li key={key} style={props}>
+                <li key={key} style={props} >
                   <Link to={item.path} activeClassName="active">
                     {item.text}
                   </Link>
-                </animated.li>
+                </li>
               ))
               .reverse()}
           </ul>

@@ -1,25 +1,11 @@
-import React, { useRef } from "react"
+import React from "react"
 import { graphql } from "gatsby"
-
-import { useSpring, animated } from "react-spring"
 
 import Img from "gatsby-image"
 import SEO from "../components/seo"
 
-import IOWrapper from "../components/animation/IOWrapper"
-import FluidList from "../components/animation/FluidList"
-
 function IndexPage({ data }) {
   const { aboutme, mystack } = data.indexJson
-
-  const imagePropsRef = useRef()
-  const imageProps = useSpring({
-    marginTop: 0,
-    opacity: 1,
-    from: { marginTop: -100, opacity: 0 },
-    delay: 300,
-    ref: imagePropsRef,
-  })
 
   return (
     <div>
@@ -35,27 +21,27 @@ function IndexPage({ data }) {
         ]}
       />
       <div className="container">
-        <IOWrapper className="row">
+        <div className="row">
           <div className="col-12 col-lg-auto left-col p-4">
             <h4>{aboutme.title}</h4>
             <div className="row profile-info">
-              <animated.div className="col-8 col-lg-12" style={imageProps}>
+              <div className="col-8 col-lg-12">
                 <Img
                   className="profile-image"
                   fluid={aboutme.image.childImageSharp.fluid}
                 />
-              </animated.div>
+              </div>
               <div className="col-4 col-lg-12">
                 <a href={`https://twitter.com/${aboutme.twitter}`} className="twitter">
                   @{aboutme.twitter}
                 </a>
-                <FluidList waitOnRef={imagePropsRef} className="d-flex flex-column mt-2">
+                <div className="d-flex flex-column mt-2">
                   {aboutme.hashtags.map(tag => (
                     <div className="small text-muted" key={tag.key}>
                       {tag.text}
                     </div>
                   ))}
-                </FluidList>
+                </div>
               </div>
             </div>
           </div>
@@ -65,8 +51,8 @@ function IndexPage({ data }) {
               __html: aboutme.content.childMarkdownRemark.html,
             }}
           />
-        </IOWrapper>
-        <IOWrapper className="row mt-4 mb-4">
+        </div>
+        <div className="row mt-4 mb-4">
           <div className="col-12 col-lg-auto left-col p-4">
             <h4>{mystack.title}</h4>
           </div>
@@ -76,9 +62,9 @@ function IndexPage({ data }) {
               __html: mystack.content.childMarkdownRemark.html,
             }}
           />
-        </IOWrapper>
+        </div>
         {mystack.categories.map(category => (
-          <IOWrapper className="row mb-5 mt-5" key={category.title}>
+          <div className="row mb-5 mt-5" key={category.title}>
             <div className="col-12 col-lg-auto left-col p-4 text-muted">
               <h6>{category.title}</h6>
             </div>
@@ -90,7 +76,7 @@ function IndexPage({ data }) {
                 </div>
               ))}
             </div>
-          </IOWrapper>
+          </div>
         ))}
       </div>
     </div>

@@ -49,6 +49,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     // Transform relative links in markdown
     `gatsby-plugin-catch-links`,
+    `gatsby-plugin-postcss`,
     // Use legacy central-layout system for route animations
     {
       resolve: `gatsby-plugin-layout`,
