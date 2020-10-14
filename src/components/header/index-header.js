@@ -52,38 +52,62 @@ function IndexHeader({ siteTitle, location }) {
   useChain([springRef, transitionRef], [0, 0.3])
 
   return (
-    <animated.header className="index-header" style={headerProps}>
-      <div className="container">
-        <Link to="/" style={{ textDecoration: "none" }}>
-          <animated.div
-            className="typo-title"
-            style={typoProps}
-            onMouseEnter={e => setHover(true)}
-            onMouseLeave={e => setHover(false)}
-          >
-            <div>
-              <span className="emph">J</span>oschua
-            </div>
-            <div>
-              <span className="emph">S</span>chneider
-            </div>
-          </animated.div>
-        </Link>
-        <nav>
-          <ul>
-            {transitions
-              .map(({ item, key, props }) => (
-                <animated.li key={key} style={props}>
-                  <Link to={item.path} activeClassName="active">
-                    {item.text}
-                  </Link>
-                </animated.li>
-              ))
-              .reverse()}
-          </ul>
-        </nav>
+    <>
+      <div
+        style={{
+          padding: "10px 15px",
+          backgroundColor: "#c93e3e",
+          color: "white",
+          textAlign: "center",
+          fontWeight: "600",
+          fontSize: "14px",
+        }}
+      >
+        Check out my{" "}
+        <a
+          href="https://joschua.dev"
+          style={{
+            textDecoration: "underline",
+            color: "white",
+          }}
+        >
+          current website
+        </a>
+        .
       </div>
-    </animated.header>
+      <animated.header className="index-header" style={headerProps}>
+        <div className="container">
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <animated.div
+              className="typo-title"
+              style={typoProps}
+              onMouseEnter={e => setHover(true)}
+              onMouseLeave={e => setHover(false)}
+            >
+              <div>
+                <span className="emph">J</span>oschua
+              </div>
+              <div>
+                <span className="emph">S</span>chneider
+              </div>
+            </animated.div>
+          </Link>
+          <nav>
+            <ul>
+              {transitions
+                .map(({ item, key, props }) => (
+                  <animated.li key={key} style={props}>
+                    <Link to={item.path} activeClassName="active">
+                      {item.text}
+                    </Link>
+                  </animated.li>
+                ))
+                .reverse()}
+            </ul>
+          </nav>
+        </div>
+      </animated.header>
+    </>
   )
 }
 
