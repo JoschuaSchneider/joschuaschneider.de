@@ -34,7 +34,7 @@
     "react-spring": "^8.0.20"
   },
   "devDependencies": {
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "prettier": "^1.17.0"
   },
   "keywords": [
